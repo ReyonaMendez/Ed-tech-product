@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>index</title>
+</head>
+<body>
+  <form action="" method="post">
+    {% csrf_token %}
+    <h3 style="margin-top: 15px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Initial task</h3>
+    <hr>
+    <label for="cars" style="margin-top: 15px;">Choose a Background color:</label>
+
+    <select name="dropdown-bg">
+      <option selected="selected" disabled>Selec</option>
+              <option value="red">red</option>
+              <option value="blue">blue</option>
+              <option value="green">green</option>
+      </select>
+
+    <br style="margin-top: 5px;">
+    <label for="cars">Choose Geometry:</label>
+
+    <select name="img_size" id="img_size" style="margin-top: 15px;">
+      <option value="small">640 x 480 px</option>
+      <!-- <option value="HD">720 x 480 px</option> -->
+      <option value="medium">1920 x 1080 px</option>
+      <!-- <option value="ultra_HD">3840 x 2160 px</option> -->
+      <option value="large">7680 x 4320 px</option>
+    </select>
+    <br >
+   
+    <a href=""><button type="submit" style="margin-top: 15px;">Proceed</button></a>
+    
+  </form>
+</body>
+</html>
